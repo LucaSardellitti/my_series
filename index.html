@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>PreviouslyOn</title>
+</head>
+<body id="body">
+
+  <header id="header">
+  
+  </header>
+
+  <main id="main">
+   <!-- <div class="container"> -->
+    
+    <div id="content">
+      <div id="formulaire" class="col-xs-offset-3 col-md-offset-0 col-xs-6 col-md-3">
+        <form id="form" method="POST">
+        	<table class="col-xs-12">
+        		<tr>
+        			<td><label for="pseudo">Pseudo</label></td>
+        			<td><input type="text" name="pseudo" id="pseudo" class="form-control form-group" min="1" required placeholder="Mon pseudo"></td>
+        		</tr>
+        		<tr>
+        			<td><label for="pwd">Mot de passe</label></td>
+        			<td><input type="password" name="pwd" id="pwd" class="form-control form-group" min="4" required placeholder="Password"></td>
+        		</tr>
+        	</table>
+          <button type="submit" id="submitConnexion" class="btn col-xs-offset-3 col-md-offset-4  col-xs-6 col-xs-8 col-md-4">Se connecter</button>
+          <!-- <a href="https://www.betaseries.com/inscription/?direct">Inscription</a> -->
+        </form>
+        <div id="informations">
+          <p class="col-xs-12">Pour s'inscrire rendez-vous sur<a href="https://www.betaseries.com/inscription/?direct"> Betaseries </a>, inscrivez-vous et revenez vous connecter sur notre application pour gérer vos series.</p>
+        </div>
+      </div>
+    </div>
+
+   <!-- </div> -->
+  </main>
+	
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script src='bootstrap/js/bootstrap.min.js'></script>
+  <script src="js/md5.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

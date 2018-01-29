@@ -1,0 +1,492 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+/*---------------------------------------*/
+/*CONNEXION*/
+/*body{
+	width: 100%;
+	height: 100%;
+	background: url(../img/cover.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}*/
+
+#body{
+	/*background-color: #F2F2F2;*/
+	font-family: 'Calibri';
+}
+
+#formulaire{
+	height: 450px;
+	margin-top: 10%;
+	margin-left: 38%;
+	/*margin-right: 42%;*/
+	background-color: rgba(0, 0, 0, 0.8);
+	border:1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 6px;
+}
+
+#formulaire form{
+	margin-top: 15%;
+	line-height: 80px;
+}
+
+#formulaire label{
+	font-size: 18px;
+	color: #FACC2E;
+}
+
+#submitConnexion{
+	margin-top: 8%;
+	background-color: #FACC2E;
+	color: #000;
+	font-size: 16px;
+	text-align: center;
+	box-shadow: 0px 0px 18px 1px rgba(255, 255, 255, 0.6);
+	transition: 0.5s;
+}
+
+#submitConnexion:hover{
+	background-color: #F7D358;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 12px 1px rgba(255, 255, 255, 0.6);
+	transition: 0.5s;
+}
+
+#informations p{
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	/*right: 4%;*/
+	font-size: 18px;
+	color: #fff;
+	text-align: left;
+}
+
+#informations p a{
+	color: #FACC2E;
+}
+
+#informations #messageError{
+	color: #FACC2E;
+}
+
+/*---------------------------------------*/
+/*AFFICHAGE DE TOUTE LES SERIES*/
+/*.banner{
+	width: 100%;
+	height: 270px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}*/
+
+.navbar{
+	height: 80px;
+}
+
+.navbar-header, #searchBarAndIcones{
+	margin-top: 1%;
+}
+
+.navbar-header a{
+	font-size: 24px; 
+}
+
+#search{
+	margin-top: 1%;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-size: 24px;
+}
+
+#searchSubmit{
+	margin-top: 1.1%;
+	font-size: 16px;
+}
+
+#BtnMesSeries{
+	width: 15%;
+	margin-top: 1%;
+}
+
+#BtnMesAmis{
+	width: 17%;
+	margin-top: 5%;
+}
+
+#BtnMesNotifs{
+	width: 15%;
+	margin-top: 3%;
+}
+
+#BtnMesSeries, #BtnMesAmis, #BtnMesNotifs{
+	margin-left: 16%;
+	transition: 1.5s;
+}
+
+#BtnMesSeries:hover, #BtnMesAmis:hover, #BtnMesNotifs:hover{
+	transform: scale(1.5);
+	transition: 1.5s;
+	cursor: pointer;
+}
+
+.titleAccueil{
+	margin-top: 85px;
+}
+
+.postersSeries{
+	width: 10%;
+	border: 1.5px solid #F2F2F2;
+	transition: 0.5s;
+}
+
+.postersSeries:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+	cursor: pointer;
+	/*opacity: 0.8;*/
+}
+
+/*---------------------------------------*/
+/*AFFICHE MES SERIES*/
+.mesSeries{
+	margin-top: 100px;
+}
+
+.titleSerie{
+	font-size: 20px;
+	border-bottom: 1px solid #D8D8D8;
+	transition: 0.5s;
+}
+
+.remaining{
+	font-size: 16px;
+}
+
+.titleSerie:hover{
+	color: #0080FF;
+	cursor: pointer;
+	margin-left: 2.5%;
+	transition: 0.5s;
+}
+
+
+/*.btnEpisode{
+	margin-top: 10%;
+	margin-left: 1%;
+}
+
+#navbar{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}*/
+
+/*---------------------------------------*/
+/*DESCRIPTION DE LA SERIE*/
+.addSerie, .archiveSerie{
+	/*margin-left: 2%;*/
+}
+
+.btnInfoSerie{
+	margin-top: 100px;
+	border-bottom: 1px solid #D8D8D8;
+	padding-bottom: 1%;
+}
+
+.btnEpisode{
+	margin-left: 1%;
+}
+
+.poster{
+	position: absolute;
+	width: 97.5%;
+	margin-left: -4%;
+}
+
+.infosSeries{
+	margin-top: 2%;
+	font-size: 16px;
+	background-color: #FAFAFA;
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.infosSeries p{
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.resum{
+	margin-top: 2%;
+	margin-left: 4%;
+	background-color: #FAFAFA;
+	font-size: 20px;
+	font-family: 'Oswald';
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	/*color: #fff;*/
+}
+
+/*---------------------------------------
+/*LISTE LES EPISODES*/
+.episodesRemaining{
+	margin-top: 100px;
+}
+
+.episodes{
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.episodes:hover{
+	color: #01DF3A;
+	cursor: pointer;
+	margin-left: 2.5%;
+	transition: 0.5s;
+}
+
+.btnNonVue{
+	margin-top: 0.8%;
+}
+
+/*---------------------------------------*/
+/*INFOS SUR L'EPISODE*/
+.infoEpisode, .resumEpisode{
+	margin-top: 120px;
+}
+
+.infoEpisode{
+	/*margin-top: 2%;*/
+	font-size: 16px;
+	background-color: #FAFAFA;
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.infoEpisode p{
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.resumEpisode{
+	/*margin-top: 2%;*/
+	margin-left: 4%;
+	background-color: #FAFAFA;
+	font-size: 20px;
+	font-family: 'Oswald';
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.ecrireCom{
+	margin-top: 2%;
+}
+
+#comments{
+	margin-top: 4%;
+	margin-left: -2.5%;
+}
+
+#commentsGen{
+	margin-top: 2%;
+}
+
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.detailBox {
+    /*width:320px;*/
+    border: 1px solid #bbb;
+    /*margin:50px;*/
+}
+.titleBox {
+    background-color: #fdfdfd;
+    padding: 10px;
+}
+.titleBox label{
+    color: #444;
+    margin: 0;
+    display: inline-block;
+}
+
+.commentList {
+    padding: 0;
+    list-style: none;
+    max-height: 320px;
+    overflow: auto;
+}
+.commentList li {
+    margin: 0;
+    margin-top: 10px;
+}
+.commentList li > div {
+    display: table-cell;
+}
+.commenterImage {
+    width: 30px;
+    margin-right: 5px;
+    height: 100%;
+    float: left;
+}
+.commenterImage img {
+    width: 100%;
+    border-radius: 50%;
+}
+.commentText p {
+    margin: 0;
+}
+.sub-text {
+    color: #aaa;
+    font-family: verdana;
+    font-size: 11px;
+}
+.actionBox {
+    border-top: 1px dotted #bbb;
+    padding: 10px;
+}
+
+/*---------------------------------------*/
+/*LISTE LES AMIS*/
+.contentFriends{
+	margin-top: 90px;
+}
+
+#searchFriends{
+	margin-top: 1%;
+	color: #000;
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
+	font-size: 24px;
+}
+
+.searchFriends{
+	margin-top: 1%;
+}
+
+.listAmis, #demandesAmis{
+	margin-top: 2.5%;
+}
+
+#allMyFriends, #allMyAsk{
+	border-bottom: 1px solid #D8D8D8;
+	padding-bottom: 1%;
+}
+
+.pseudoAmis, .textNotifs{
+	font-size: 18px;
+}
+
+.pseudoAmis, .bloquer, .supprimer, .textNotifs, .acceptFriend{
+	margin-top: 1%;
+}
+
+.bloquer, .supprimer{
+	margin-left: 2%;
+}
+
+.bloquer{
+	background-color: #2E2E2E;
+	color: #fff;
+}
+
+.bloquer:hover{
+	background-color: #E6E6E6;
+}
+
+/*---------------------------------------*/
+/*LISTE RECHERCHE D'AMIS*/
+.resultFriendsSearch{
+	margin-top: 10%;
+}
+
+.searchFriendsLogin{
+	font-size: 18px;
+}
+
+/*---------------------------------------*/
+/*LISTE LES NOTIFICATIONS*/
+.titleNotifs{
+	margin-top: 85px;
+}
+
+.notifs{
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#formulaire{
+		height: 650px;
+		margin-top: 30%;
+		margin-left: 25%;
+		/*margin-right: 25%;	*/
+	}
+
+	#formulaire form{
+		line-height: 100px;
+	}
+
+	#formulaire label{
+		font-size: 34px;
+	}
+
+	#submitConnexion{
+		font-size: 30px;
+	}
+
+	#informations p{
+		font-size: 30px;
+		bottom: 4%;
+		left: 2%;
+		right: 2%;
+	}
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#formulaire{
+		height: 700px;
+		margin-top: 40%;
+		margin-left: 25%;
+		/*margin-right: 25%;	*/
+	}
+
+	#formulaire form{
+		line-height: 100px;
+	}
+
+	#formulaire label{
+		font-size: 34px;
+	}
+
+	#submitConnexion{
+		font-size: 30px;
+	}
+
+	#formulaire p{
+		font-size: 30px;
+		bottom: 8%;
+	}
+}
